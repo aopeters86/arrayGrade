@@ -36,9 +36,34 @@ public class GradesTest {
 		for(int i = 0; i < n; i++) {
 			max = Math.max(max, students[i]);
 //			System.out.print(max);
-			
+			}
+		
+		
+		//loop thru and print results 
+		for(int i = 0; i < students.length; i++) {
+			System.out.print("Student " + " student number " + score + n + " and grade is " + getGrade(' ', score));
 		}
 		
+		
+	}
+		public static char getGrade(double students, double max, double score) {
+			for(int i = 0; i < students.length; i++) {
+			if (score >= max - 10) {
+				return 'A';
+				}
+			if(score >= max - 20) {
+				return 'B';
+				}
+			if(score >= max - 30) {
+				return 'C';
+				}
+			if(score >= max - 30) {
+				return 'D';
+				}
+			else {
+				return 'F';
+			}
+			}
 		//need to loop array to find max number then determine score for rest of them based on best score
 		
 		
@@ -57,12 +82,9 @@ public class GradesTest {
 		
 		
 		
-		for(int i = 0; i < students.length; i++) {
-			System.out.print("Student " + "student number" + " score is " + n + " and grade is " + "output of best minus 10 converted to grade\n");
-		}
 		
 		//loop results for max
-		System.out.print(max);
+		//System.out.print(max);
 		
 }
 }
