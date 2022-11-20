@@ -8,10 +8,6 @@
  * program prompts the user to enter the total number of students, then prompts for scores, concludes by displaying grades 
  */
 
-
-
-
-
 public class GradesTestString {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -38,9 +34,9 @@ public class GradesTestString {
 			best = Math.max(best, students[i]);
 			//System.out.print(best);
 			}
-	//}
-		
-//		public static String getGrades(String score, String max){
+
+		//loop best through students to get grade, use char. tried method but didnt work well 
+		//used char grades as a variable and it worked. simpler
 		char grades;
 		for(int i = 0; i < students.length; i++) {
 			if (students[i] >= best - 10)
@@ -53,39 +49,12 @@ public class GradesTestString {
 				grades = 'D';
 			else
 				grades = 'F';
-//		}
-//		
-		
-		
 
-			System.out.println("Student " + i +"Score is " + students[i]+ " " + grades);
-//			
-	
-		
-		
+
+			System.out.println("Student " + i +" Score is " + students[i]+ " " + grades);
+
 	}
 	
-		//need to loop array to find max number then determine score for rest of them based on best score
-		
-		
-		//need cases? if best score - 10 = A
-		//need cases? if best score - 20 = b
-		//need cases? if best score - 30 = c
-		//need cases? if best score - 40 = d
-		//need cases? otherwise f
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		//loop results for max
-		//System.out.print(max);
 		
 }
 }
@@ -94,3 +63,24 @@ public class GradesTestString {
 //for(int i = 0; i < students.length; i++) {
 //	System.out.print(students[i] + " ll");
 //}
+//need to loop array to find max number then determine score for rest of them based on best score
+
+
+//need cases? if best score - 10 = A
+//need cases? if best score - 20 = b
+//need cases? if best score - 30 = c
+//need cases? if best score - 40 = d
+//need cases? otherwise f
+
+
+
+
+
+
+
+
+
+
+
+//loop results for max
+//System.out.print(max);
