@@ -8,10 +8,6 @@
  * program prompts the user to enter the total number of students, then prompts for scores, concludes by displaying grades 
  */
 
-
-
-
-
 public class GradesTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -28,7 +24,7 @@ public class GradesTest {
 	System.out.print("Enter " + n + " Scores");
 		for (int i = 0; i < n; i++) {
 			students[i] = input.nextDouble();
-			score += students[i];
+			score = students[i];
 		}
 		
 		//Determine grade, score 
@@ -41,55 +37,93 @@ public class GradesTest {
 		
 		//loop thru and print results 
 		for(int i = 0; i < students.length; i++) {
-			System.out.print("Student " + " student number " + score + n + " and grade is " + getGrade(' ', score));
+			System.out.println("" + n);
+			//getGrade(' ', score);
 		}
 		
+		//double[] list = students[i];
 		
 	}
-		public static char getGrade(double students, double max, double score) {
-			for(int i = 0; i < students.length; i++) {
-			if (score >= max - 10) {
-				return 'A';
-				}
-			if(score >= max - 20) {
-				return 'B';
-				}
-			if(score >= max - 30) {
-				return 'C';
-				}
-			if(score >= max - 30) {
-				return 'D';
-				}
-			else {
-				return 'F';
-			}
-			}
-		//need to loop array to find max number then determine score for rest of them based on best score
 		
-		
-		//need cases? if best score - 10 = A
-		//need cases? if best score - 20 = b
-		//need cases? if best score - 30 = c
-		//need cases? if best score - 40 = d
-		//need cases? otherwise f
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		//loop results for max
-		//System.out.print(max);
-		
-}
-}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//		public static char getGrade(double best, double score) {
+//			if (score >= best - 10)
+//				return 'A';	
+//			else if (score >= best - 20)
+//				return 'B';
+//			else if (score >= best - 30)
+//				return 'C';
+//			else if (score >= best - 40)
+//				return 'D';
+//			else
+//				return'F';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //for(int i = 0; i < students.length; i++) {
 //	System.out.print(students[i] + " ll");
+//}
+//		public static void getGrade(double max, double score) {
+//			
+//		//for(int i = 0; i < students; i++) {
+//			if (score >= (max - 10.0)) {
+//				System.out.println('A');
+//				}
+//			else if(score >= (max - 20.0)) {
+//				System.out.println('B');
+//				}
+//			else if(score >= (max - 30)) {
+//				System.out.println('C');
+//				}
+//			else if(score >= (max - 30)) {
+//				System.out.println('D');
+//				}
+//			else {
+//				System.out.println('F');
+//			}
+//need to loop array to find max number then determine score for rest of them based on best score
+
+
+//need cases? if best score - 10 = A
+//need cases? if best score - 20 = b
+//need cases? if best score - 30 = c
+//need cases? if best score - 40 = d
+//need cases? otherwise f
+
 //}
